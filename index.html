@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <h1 id = "inicio">Proyecto M1</h1>
+    </header>     
+        <main>
+            <section id="sobreMi">
+                <h2>Sobre Mi</h2>
+                <p>
+                    Mi nombre Es Eduardo Sanchez.
+                </p>
+                <p>
+                    Me encuentro estudiando full stack developer en soy henry.
+                </p>
+                <p></p>
+            </section>
+            <section>
+                <h1 id ="sobreMi">Tecnologias Favoritas</h1>    
+            </section>
+            <section id="favorite-tecnologies" class="container-cards">
+                <div class="card">
+                    <img src="IMG/CssLogo.png" alt="Imagen de la tarjeta">
+                    <h3 class ="letra-grande">CSS</h3> 
+                </div>
+                <div class="card">
+                    <img src="IMG/JsLogo.png" alt="Imagen de la tarjeta">
+                    <h3 class ="letra-grande">JS</h3>
+                </div>
+                <div class="card">
+                    <img src="IMG/174854.png" alt="Imagen de la tarjeta">
+                    <h3 class="letra-grande">HTML</h3>
+                </div>
+            </section>
+            <section id="favorite-activities">
+                <h1 id ="sobreMi"> Actividades Favoritas </h1>
+                <form action="" id = "activities-form">
+                    <input type="text" placeholder=" Ingrese Un Titulo" id ="title-imput" />
+                    <textarea 
+                        name="descripcion" 
+                        cols = "30" 
+                        rows ="5" 
+                        placeholder="Describa Su Actividad"
+                        id="descripcion-imput"
+                    ></textarea>
+                    <input type="url" placeholder="Ingrese Un URL" id ="img-imput">
+                    <input type="submit" value="Agregar Actividad" id="create-activity-button" />
+                </form>
+                    <div id="container-activities" class = "container-cards">
+                    </div>
+            </section>
+        </main>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

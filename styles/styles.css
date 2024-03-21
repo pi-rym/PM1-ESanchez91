@@ -1,0 +1,126 @@
+
+#sobreMi {
+    color: blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    color: blue;
+    font-size: 16px;
+    line-height: normal;
+    margin: 10px;
+    text-align: justify;
+}
+.container-cards {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card > img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top : 75px;
+    transform: translate(300px);
+    transition: all 1s;
+}
+
+.card > h3 {
+    position: absolute;
+    top: 120px;
+    font-size: 60px;
+    transition: transform 1s;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 15px;
+    transform: scale(1.1)
+}
+
+.card:hover > img {
+    transform: translateY(0);
+}
+
+.card:hover > h3 {
+    transform: translateY(-300px);
+}
+
+#favorite-activities {
+    width: 100%;
+}
+
+#title-imput{
+    background-color: blue;
+    color: #f5f0f0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+#img-imput{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#activities-form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+#descripcion-imput{
+    background-color: blue;
+    color: #fbf6f6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: start;
+}
+
+#inicio{
+    background-color: blue;
+    color: white;
+    justify-content: center;
+}
+
+#favorite-tecnologies{
+    width: 100%;
+}
+
+#create-activity-button{
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: auto;
+    border-radius: 15px;
+}
